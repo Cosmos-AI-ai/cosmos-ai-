@@ -3,7 +3,7 @@ name: Open URL Every 5 Minutes
 on:
   schedule:
     - cron: '*/1 * * * *'  # Runs every 5 minutes
-    workflow_dispatch:
+  workflow_dispatch:
 jobs:
   open_url:
     runs-on: ubuntu-latest
