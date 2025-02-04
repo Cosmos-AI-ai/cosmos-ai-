@@ -1,0 +1,15 @@
+name: Open URL Every 5 Minutes
+
+on:
+  schedule:
+    - cron: '*/1 * * * *'  # Runs every 5 minutes
+
+jobs:
+  open_url:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Open URL
+      run: |
+        curl "https://tic-toe-ai.netlify.app.com"
+        echo "URL opened successfully!"
